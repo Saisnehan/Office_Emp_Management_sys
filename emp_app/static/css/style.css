@@ -1,0 +1,410 @@
+/* ===========================
+        GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#eef3f8;
+
+    color:#2c3e50;
+
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+.navbar{
+
+    background:linear-gradient(90deg,#0f4c81,#2563eb);
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#ffd43b!important;
+
+}
+
+/* ===========================
+        CARDS
+=========================== */
+
+.dashboard-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.btn-custom{
+
+    background:linear-gradient(135deg,#2563eb,#0f4c81);
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.btn-custom:hover{
+
+    transform:translateY(-3px);
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.3);
+
+}
+
+/* ===========================
+        FORMS
+=========================== */
+
+.form-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+}
+
+.form-control:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+
+}
+
+/* ===========================
+        TABLE
+=========================== */
+
+.table-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.table{
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.table tbody tr:hover{
+
+    background:#eef6ff;
+
+}
+
+/* ===========================
+        HERO
+=========================== */
+
+.hero{
+
+    padding:70px;
+
+    border-radius:25px;
+
+    color:white;
+
+    background:linear-gradient(135deg,#2563eb,#0f4c81);
+
+    margin-bottom:40px;
+
+}
+
+.hero h1{
+
+    font-size:50px;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+/* ===========================
+        STATS
+=========================== */
+
+.stat-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-box i{
+
+    font-size:45px;
+
+    color:#2563eb;
+
+}
+
+.stat-box h2{
+
+    margin-top:15px;
+
+    font-weight:700;
+
+}
+
+.stat-box p{
+
+    color:#666;
+
+}
+
+/* ===========================
+        FOOTER
+=========================== */
+
+.footer{
+
+    background:#0f4c81;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(37,99,235,.95),
+
+rgba(15,76,129,.95)
+
+),
+
+url("../images/hr-bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+}
+/* =============================
+Animations
+============================= */
+
+body{
+
+opacity:0;
+
+transition:.5s;
+
+}
+
+body.loaded{
+
+opacity:1;
+
+}
+
+
+.dashboard-card{
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+
+.dashboard-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.table tbody tr{
+
+transition:.3s;
+
+}
+
+
+.badge{
+
+padding:8px 14px;
+
+border-radius:50px;
+
+}
+
+
+.form-control{
+
+transition:.3s;
+
+}
+
+
+.form-control:hover{
+
+border-color:#2563eb;
+
+}
+
+
+.btn{
+
+transition:.3s;
+
+}
+
+
+.btn:hover{
+
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}

@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="table-card">
+
+    <!-- Header -->
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+
+        <div>
+
+            <h2 class="fw-bold">
+                <i class="fa-solid fa-users text-primary"></i>
+                Employee Directory
+            </h2>
+
+            <p class="text-muted mb-0">
+                Manage and view all employee records.
+            </p>
+
+        </div>
+
+        <div>
+
+            <span class="badge bg-primary fs-6 p-3">
+                Total Employees : {{ emps|length }}
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Search Box -->
+
+    <div class="row mb-4">
+
+        <div class="col-md-4 ms-auto">
+
+            <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="🔍 Search Employee...">
+
+        </div>
+
+    </div>
+
+    <!-- Employee Table -->
+
+    <div class="table-responsive">
+
+        <table class="table table-hover align-middle" id="employeeTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Salary</th>
+
+                    <th>Bonus</th>
+
+                    <th>Phone</th>
+
+                    <th>Role</th>
+
+                    <th>Department</th>
+
+                    <th>Location</th>
+
+                    <th>Hire Date</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for emp in emps %}
+
+                <tr>
+
+                    <td>
+
+                        <span class="badge bg-secondary">
+                            {{ emp.id }}
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <strong>
+
+                            <i class="fa-solid fa-user text-primary"></i>
+
+                            {{ emp.first_name }} {{ emp.last_name }}
+
+                        </strong>
+
+                    </td>
+
+                    <td>
+
+                        ₹ {{ emp.salary }}
+
+                    </td>
+
+                    <td>
+
+                        ₹ {{ emp.bonus }}
+
+                    </td>
+
+                    <td>
+
+                        {{ emp.phone }}
+
+                    </td>
+
+                    <td>
+
+                        <span class="badge bg-success">
+
+                            {{ emp.role.name }}
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        <span class="badge bg-info text-dark">
+
+                            {{ emp.dept.name }}
+
+                        </span>
+
+                    </td>
+
+                    <td>
+
+                        {{ emp.dept.location }}
+
+                    </td>
+
+                    <td>
+
+                        {{ emp.hire_date }}
+
+                    </td>
+
+                </tr>
+
+                {% empty %}
+
+                <tr>
+
+                    <td colspan="9" class="text-center py-5">
+
+                        <i class="fa-solid fa-circle-info fa-3x text-secondary mb-3"></i>
+
+                        <h5>No Employees Found</h5>
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- Bottom Buttons -->
+
+    <div class="d-flex justify-content-between mt-4 flex-wrap">
+
+        <a href="/" class="btn btn-secondary">
+
+            <i class="fa-solid fa-house"></i>
+
+            Dashboard
+
+        </a>
+
+        <a href="/add_emp" class="btn btn-success">
+
+            <i class="fa-solid fa-user-plus"></i>
+
+            Add Employee
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- Search Script -->
+
+<script>
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup", function(){
+
+let filter = this.value.toLowerCase();
+
+let rows = document.querySelectorAll("#employeeTable tbody tr");
+
+rows.forEach(function(row){
+
+let text = row.innerText.toLowerCase();
+
+row.style.display = text.includes(filter) ? "" : "none";
+
+});
+
+});
+
+</script>
+
+{% endblock %}

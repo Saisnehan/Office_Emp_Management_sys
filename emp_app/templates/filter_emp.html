@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-8">
+
+        <div class="form-card">
+
+            <div class="text-center mb-4">
+
+                <i class="fa-solid fa-magnifying-glass fa-4x text-primary mb-3"></i>
+
+                <h2 class="fw-bold">Search Employees</h2>
+
+                <p class="text-muted">
+                    Search employees by name, department, or role.
+                </p>
+
+            </div>
+
+            <form action="/filter_emp" method="POST">
+
+                {% csrf_token %}
+
+                <div class="mb-3">
+
+                    <label class="form-label">
+                        <i class="fa-solid fa-user text-primary"></i>
+                        Employee Name
+                    </label>
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        value="{{ name }}"
+                        placeholder="Enter employee name">
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            <i class="fa-solid fa-building text-success"></i>
+                            Department
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="dept"
+                            value="{{ dept }}"
+                            placeholder="Department Name">
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <label class="form-label">
+                            <i class="fa-solid fa-briefcase text-warning"></i>
+                            Role
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="role"
+                            value="{{ role }}"
+                            placeholder="Role Name">
+
+                    </div>
+
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-flex justify-content-between flex-wrap">
+
+                    <a href="/" class="btn btn-secondary">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                        Dashboard
+
+                    </a>
+
+                    <button type="reset" class="btn btn-warning">
+
+                        <i class="fa-solid fa-rotate"></i>
+
+                        Clear
+
+                    </button>
+
+                    <button type="submit" class="btn btn-custom">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Search Employees
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Tips Card -->
+
+<div class="row justify-content-center mt-5">
+
+    <div class="col-lg-8">
+
+        <div class="dashboard-card">
+
+            <h4 class="mb-3">
+
+                <i class="fa-solid fa-lightbulb text-warning"></i>
+
+                Search Tips
+
+            </h4>
+
+            <ul class="list-group list-group-flush">
+
+                <li class="list-group-item">
+                    Search by first or last name.
+                </li>
+
+                <li class="list-group-item">
+                    Filter using department names like <strong>HR</strong>, <strong>IT</strong>, or <strong>Finance</strong>.
+                </li>
+
+                <li class="list-group-item">
+                    Search by role such as <strong>Manager</strong>, <strong>Developer</strong>, or <strong>Analyst</strong>.
+                </li>
+
+                <li class="list-group-item">
+                    Leave fields blank to broaden your search.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

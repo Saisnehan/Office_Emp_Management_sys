@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+
+        <div>
+
+            <h2 class="fw-bold">
+                <i class="fa-solid fa-user-minus text-danger"></i>
+                Remove Employee
+            </h2>
+
+            <p class="text-muted">
+                Select an employee to remove from the system.
+            </p>
+
+        </div>
+
+        <a href="/" class="btn btn-secondary">
+
+            <i class="fa-solid fa-house"></i>
+
+            Dashboard
+
+        </a>
+
+    </div>
+
+    <!-- Search Box -->
+
+    <div class="row mb-4">
+
+        <div class="col-md-5 ms-auto">
+
+            <input
+                type="text"
+                class="form-control"
+                id="searchEmployee"
+                placeholder="🔍 Search Employee">
+
+        </div>
+
+    </div>
+
+    <!-- Employee Cards -->
+
+    <div class="row" id="employeeContainer">
+
+        {% for emp in emps %}
+
+        <div class="col-lg-4 col-md-6 mb-4 employee-card">
+
+            <div class="dashboard-card h-100 text-center">
+
+                <div class="mb-3">
+
+                    <i class="fa-solid fa-circle-user fa-5x text-primary"></i>
+
+                </div>
+
+                <h4>
+
+                    {{ emp.first_name }} {{ emp.last_name }}
+
+                </h4>
+
+                <p class="text-muted">
+
+                    Employee ID :
+                    <strong>{{ emp.id }}</strong>
+
+                </p>
+
+                <div class="mb-3">
+
+                    <span class="badge bg-success">
+
+                        {{ emp.role.name }}
+
+                    </span>
+
+                    <span class="badge bg-info text-dark">
+
+                        {{ emp.dept.name }}
+
+                    </span>
+
+                </div>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+
+                    {{ emp.dept.location }}
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone text-success"></i>
+
+                    {{ emp.phone }}
+
+                </p>
+
+                <p>
+
+                    <strong>Salary :</strong>
+
+                    ₹ {{ emp.salary }}
+
+                </p>
+
+                <a href="/remove_emp/{{ emp.id }}"
+                   class="btn btn-danger w-100">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Remove Employee
+
+                </a>
+
+            </div>
+
+        </div>
+
+        {% empty %}
+
+        <div class="col-12">
+
+            <div class="alert alert-warning text-center">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                No Employees Found
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<!-- Search Script -->
+
+<script>
+
+const search = document.getElementById("searchEmployee");
+
+search.addEventListener("keyup", function(){
+
+let filter = this.value.toLowerCase();
+
+let cards = document.querySelectorAll(".employee-card");
+
+cards.forEach(function(card){
+
+let txt = card.innerText.toLowerCase();
+
+card.style.display = txt.includes(filter) ? "" : "none";
+
+});
+
+});
+
+</script>
+
+{% endblock %}
