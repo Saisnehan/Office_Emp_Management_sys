@@ -14,7 +14,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 - 🔍 Employee Search and Filtering
 - 🔐 Secure Admin Authentication
 - 📊 Responsive HR Dashboard
-- 📱 Mobile-Friendly User Interface
+- 📱 Mobile-Friendly User Interface 
 - ⚡ Fast and Easy Navigation
 
 ## 🛠️ Tech Stack
