@@ -10,7 +10,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
     
 - 👥 Employee Management (Create, View, Update, Delete)
 - 🏢 Department Management   
-- 💼 Role Management
+- 💼 Role Management  
 - 🔍 Employee Search and Filtering
 - 🔐 Secure Admin Authentication
 - 📊 Responsive HR Dashboard
