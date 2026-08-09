@@ -51,7 +51,7 @@ Office_Emp_Management_sys/
 └── db.sqlite3
 ```
 
-## ⚙️ Installation
+## ⚙️ Installation  
 
 ### 1. Clone the repository
 
