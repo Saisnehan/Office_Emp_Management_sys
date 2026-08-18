@@ -45,7 +45,7 @@ Office_Emp_Management_sys/
 ├── office_emp_proj/
 ├── staticfiles/
 ├── manage.py
-├── requirements.txt
+├── requirements.txt  
 ├── vercel.json
 ├── build_files.sh
 └── db.sqlite3
