@@ -134,7 +134,7 @@ Add screenshots of:
 - PostgreSQL Integration
 - Docker Support
 
-## 🤝 Contributing
+## 🤝 Contributing  
 
 Contributions are welcome.
 
