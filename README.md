@@ -64,7 +64,7 @@ cd Office_Emp_Management_sys
 ### 2. Create a Virtual Environment
 
 ```bash
-python -m venv venv
+python -m venv venv  
 ```
 
 Activate the environment
