@@ -58,7 +58,7 @@ Office_Emp_Management_sys/
 ```bash
 git clone https://github.com/Saisnehan/Office_Emp_Management_sys.git
 
-cd Office_Emp_Management_sys
+cd Office_Emp_Management_sys   
 ```
 
 ### 2. Create a Virtual Environment
