@@ -50,7 +50,7 @@ Office_Emp_Management_sys/
 ├── build_files.sh
 └── db.sqlite3
 ```
-
+  
 ## ⚙️ Installation  
 
 ### 1. Clone the repository
