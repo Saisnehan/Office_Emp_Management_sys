@@ -21,7 +21,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 
 ### Backend
 - Python
-- Django
+- Django  
 
 ### Frontend  
 - HTML5
