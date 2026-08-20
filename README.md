@@ -75,7 +75,7 @@ Activate the environment
 venv\Scripts\activate
 ```
   
-**Linux/macOS**
+**Linux/macOS**  
 
 ```bash
 source venv/bin/activate
