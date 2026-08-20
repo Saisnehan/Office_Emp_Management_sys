@@ -128,7 +128,7 @@ Add screenshots of:
 
 - Employee Attendance Management
 - Leave Management System
-- Payroll Module
+- Payroll Module  
 - Email Notifications
 - Report Generation
 - PostgreSQL Integration  
