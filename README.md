@@ -74,7 +74,7 @@ Activate the environment
 ```bash
 venv\Scripts\activate
 ```  
-  
+    
 **Linux/macOS**  
 
 ```bash
