@@ -133,7 +133,7 @@ Add screenshots of:
 - Report Generation
 - PostgreSQL Integration  
 - Docker Support
-
+  
 ## 🤝 Contributing    
 
 Contributions are welcome.
