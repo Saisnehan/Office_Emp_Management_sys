@@ -30,7 +30,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 - JavaScript
 
 ### Database
-- SQLite
+- SQLite  
 
 ### Deployment   
 - Vercel
