@@ -124,7 +124,7 @@ Add screenshots of:
 - Search & Filter
 - Authentication
 
-## 🌟 Future Enhancements    
+## 🌟 Future Enhancements      
 
 - Employee Attendance Management   
 - Leave Management System
