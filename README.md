@@ -131,7 +131,7 @@ Add screenshots of:
 - Payroll Module  
 - Email Notifications
 - Report Generation
-- PostgreSQL Integration      
+- PostgreSQL Integration        
 - Docker Support   
   
 ## 🤝 Contributing        
