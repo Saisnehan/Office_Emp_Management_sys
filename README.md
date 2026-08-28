@@ -132,7 +132,7 @@ Add screenshots of:
 - Email Notifications
 - Report Generation  
 - PostgreSQL Integration        
-- Docker Support   
+- Docker Support      
   
 ## 🤝 Contributing        
 
