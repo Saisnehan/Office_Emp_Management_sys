@@ -12,7 +12,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 - 💼 Role Management         
 - 🔍 Employee Search and Filtering            
 - 🔐 Secure Admin Authentication       
-- 📊 Responsive HR Dashboard            
+- 📊 Responsive HR Dashboard                
 - 📱 Mobile-Friendly User Interface  
 - ⚡ Fast and Easy Navigation               
               
@@ -35,7 +35,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 ### Deployment   
 - Vercel
   
-## 📂 Project Structure
+## 📂 Project Structure   
   
 ```  
 Office_Emp_Management_sys/
