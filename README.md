@@ -11,10 +11,10 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 - 🏢 Department Management
 - 💼 Role Management
 - 🔍 Employee Search and Filtering  
-- 🔐 Secure Admin Authentication    
-- 📊 Responsive HR Dashboard            
-- 📱 Mobile-Friendly User Interface  
-- ⚡ Fast and Easy Navigation               
+- 🔐 Secure Admin Authentication
+- 📊 Responsive HR Dashboard        
+- 📱 Mobile-Friendly User Interface
+- ⚡ Fast and Easy Navigation            
               
 
 ## 🛠️ Tech Stack
