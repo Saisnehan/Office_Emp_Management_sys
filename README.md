@@ -120,7 +120,7 @@ Add screenshots of:
 - Employee Management
 - Department Management  
 - Role Management
-- Admin Dashboard
+- Admin Dashboard  
 - Search & Filter
 - Authentication
 
