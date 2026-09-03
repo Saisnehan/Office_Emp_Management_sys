@@ -111,7 +111,7 @@ Add screenshots of:
 
 - Login Page
 - Dashboard
-- Employee List
+- Employee List  
 - Add Employee Page  
 - Search & Filter Functionality
   
