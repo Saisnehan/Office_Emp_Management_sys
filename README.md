@@ -69,7 +69,7 @@ python -m venv venv
   
 Activate the environment
 
-**Windows**
+**Windows**  
 
 ```bash
 venv\Scripts\activate
