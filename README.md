@@ -130,7 +130,7 @@ Add screenshots of:
 - Leave Management System
 - Payroll Module  
 - Email Notifications
-- Report Generation  
+- Report Generation    
 - PostgreSQL Integration           
 - Docker Support      
     
