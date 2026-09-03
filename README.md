@@ -14,23 +14,23 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 - 🔐 Secure Admin Authentication
 - 📊 Responsive HR Dashboard        
 - 📱 Mobile-Friendly User Interface
-- ⚡ Fast and Easy Navigation            
+- ⚡ Fast and Easy Navigation   
               
 
 ## 🛠️ Tech Stack
 
 ### Backend
-- Python      
-- Django     
+- Python 
+- Django    
 
 ### Frontend  
-- HTML5     
-- CSS3 
+- HTML5 
+- CSS3
 - Bootstrap
 - JavaScript
 
 ### Database
-- SQLite  
+- SQLite
 
 ### Deployment   
 - Vercel
