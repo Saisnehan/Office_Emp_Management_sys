@@ -67,7 +67,7 @@ cd Office_Emp_Management_sys
 python -m venv venv  
 ```
   
-Activate the environment
+Activate the environment   
 
 **Windows**  
 
