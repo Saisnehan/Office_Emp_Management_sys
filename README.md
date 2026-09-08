@@ -40,7 +40,7 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 ```    
 Office_Emp_Management_sys/
 │
-├── api/
+├── api   
 ├── emp_app/
 ├── office_emp_proj/
 ├── staticfiles/
