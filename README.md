@@ -146,7 +146,7 @@ Contributions are welcome.
           
 ## 👨‍💻 Author          
     
-**K Sai Snehan**    
+**K Sai Snehan**      
 
 - GitHub: https://github.com/Saisnehan  
 - LinkedIn: https://www.linkedin.com/in/k-saisnehan/  
