@@ -117,7 +117,7 @@ Add screenshots of:
   
 ## 🎯 Key Modules
 
-- Employee Management
+- Employee Management  
 - Department Management  
 - Role Management
 - Admin Dashboard  
