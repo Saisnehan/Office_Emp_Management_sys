@@ -3,19 +3,10 @@
 A modern **Employee Management System** built using **Python, Django, Bootstrap, and SQLite**. The application streamlines HR operations by providing an intuitive interface to manage employees, departments, and roles efficiently.
                    
 ## 🚀 Live Demo 
-    
+  
 🌐 https://office-emp-management-sys.vercel.app/  
       
-## ✨ Features   
-- 👥 Employee Management (Create, View, Update, Delete)  
-- 🏢 Department Management
-- 💼 Role Management
-- 🔍 Employee Search and Filtering  
-- 🔐 Secure Admin Authentication  
-- 📊 Responsive HR Dashboard           
-- 📱 Mobile-Friendly User Interface  
-- ⚡ Fast and Easy Navigation   
-              
+
 
 ## 🛠️ Tech Stack
 
