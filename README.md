@@ -126,13 +126,7 @@ Add screenshots of:
 
 ## 🌟 Future Enhancements
 
-- Employee Attendance Management
-- Leave Management System
-- Payroll Module  
-- Email Notifications
-- Report Generation  
-- PostgreSQL Integration 
-- Docker Support
+
     
 ## 🤝 Contributing        
   
