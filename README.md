@@ -36,7 +36,19 @@ A modern **Employee Management System** built using **Python, Django, Bootstrap,
 - Vercel
   
 ## 📂 Project Structure   
-  
+```    
+Office_Emp_Management_sys/
+│
+├── api   
+├── emp_app/
+├── office_emp_proj/
+├── staticfiles/
+├── manage.py
+├── requirements.txt  
+├── vercel.json
+├── build_files.sh      
+└── db.sqlite3
+```  
 
      
 ## ⚙️ Installation     
