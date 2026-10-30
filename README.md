@@ -87,19 +87,19 @@ source venv/bin/activate
 pip install -r requirements.txt  
 ```
   
-### 4. Apply Migrations   
+### 4. Apply Migrations              
 
 ```bash  
 python manage.py migrate
 ```
-
+     
 ### 5. Run the Development Server   
 
-```bash
+```bash              
 python manage.py runserver
 ```
 
-Open your browser and visit:  
+Open your browser and visit:                              
 
 ```
 http://127.0.0.1:8000/   
